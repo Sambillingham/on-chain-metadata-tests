@@ -34,9 +34,16 @@ module.exports = {
       url: process.env.STAGING_ALCHEMY_KEY,
       accounts: [process.env.PRIVATE_KEY],
     },
+    mumbai: {
+      url: process.env.MUMBAI_ALCHEMY_KEY, 
+      accounts: [process.env.PRIVATE_KEY],
+    }
   },
+  // etherscan: {
+  //   apiKey: process.env.ETHERSCAN_API,
+  // },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API,
+    apiKey: process.env.POLYSCAN_API,
   },
   gasReporter: {
     currency: 'USD',
